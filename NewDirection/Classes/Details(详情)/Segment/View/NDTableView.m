@@ -30,8 +30,6 @@
 
 - (void)initPoints
 {
-    
-    //封装参数
     _Points = [NSMutableArray array];
     _allPoints = [NSMutableArray array];
     [_dataSourceArray enumerateObjectsUsingBlock:^(NSDictionary *pointDic, NSUInteger idx, BOOL * _Nonnull stop) {
@@ -47,8 +45,6 @@
     //创建Node节点
     NSMutableArray *nodes = [NSMutableArray array];
     [_allPoints enumerateObjectsUsingBlock:^(NDPoint *point, NSUInteger idx, BOOL * _Nonnull stop) {
-        
-        //            NSLog(@"%@----%@----%@",point.point_name,point.point_knowid,point.point_pid);
         
         NDNode *node = [[NDNode alloc] initWithParentId:[point.point_pid integerValue] nodeId:[point.point_knowid integerValue] name:point.point_name depth:[point.point_depth integerValue] expand:point.point_expand];
         [nodes addObject:node];
