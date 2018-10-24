@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>type</key>
+		<false/>
+		<key>image_path</key>
+		<string>http://www.jinyingjie.com/Uploads/MobileIndexAds/5bbac011d9779.jpg</string>
+	</dict>
+	<dict>
+		<key>type</key>
+		<false/>
+		<key>image_path</key>
+		<string>http://www.jinyingjie.com/Uploads/MobileIndexAds/5bbb265782062.jpg</string>
+	</dict>
+	<dict>
+		<key>type</key>
+		<false/>
+		<key>image_path</key>
+		<string>http://www.jinyingjie.com/Uploads/MobileIndexAds/5bbdb9fddb38e.jpg</string>
+	</dict>
+	<dict>
+		<key>type</key>
+		<false/>
+		<key>image_path</key>
+		<string>http://www.jinyingjie.com/Uploads/MobileIndexAds/5b7f799a2a71a.jpg</string>
+	</dict>
+	<dict>
+		<key>type</key>
+		<false/>
+		<key>image_path</key>
+		<string>http://www.jinyingjie.com/Uploads/MobileIndexAds/5b9108b206411.png</string>
+	</dict>
+	<dict>
+		<key>type</key>
+		<false/>
+		<key>image_path</key>
+		<string>http://www.jinyingjie.com/Uploads/MobileIndexAds/5b9216539c394.jpg</string>
+	</dict>
+</array>
+</plist>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="NDStoreTopView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="p7g-Zw-gqq">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您好，您当前选择的专业是：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C53-MI-QaS">
+                    <rect key="frame" x="20" y="21" width="186" height="22"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="中医医师" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hwj-ox-ath">
+                    <rect key="frame" x="206" y="21" width="57.5" height="22"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PjG-J3-Kt6">
+                    <rect key="frame" x="206" y="21" width="72.5" height="22"/>
+                    <state key="normal" image="downward"/>
+                    <connections>
+                        <action selector="domainChooseButtonClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="5mV-8S-iai"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="p7g-Zw-gqq" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="2t2-4N-xmZ"/>
+                <constraint firstItem="C53-MI-QaS" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="8tQ-9y-Sbh"/>
+                <constraint firstItem="PjG-J3-Kt6" firstAttribute="height" secondItem="hwj-ox-ath" secondAttribute="height" id="Gd2-wh-tuv"/>
+                <constraint firstItem="p7g-Zw-gqq" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Ha7-Py-TLO"/>
+                <constraint firstItem="hwj-ox-ath" firstAttribute="top" secondItem="C53-MI-QaS" secondAttribute="top" id="Jiu-c9-Cgs"/>
+                <constraint firstItem="PjG-J3-Kt6" firstAttribute="top" secondItem="hwj-ox-ath" secondAttribute="top" id="OSw-yb-09L"/>
+                <constraint firstItem="PjG-J3-Kt6" firstAttribute="leading" secondItem="hwj-ox-ath" secondAttribute="leading" id="QIF-5z-suK"/>
+                <constraint firstItem="PjG-J3-Kt6" firstAttribute="width" secondItem="hwj-ox-ath" secondAttribute="width" constant="15" id="fAa-pw-ADr"/>
+                <constraint firstItem="hwj-ox-ath" firstAttribute="leading" secondItem="C53-MI-QaS" secondAttribute="trailing" id="rV2-eJ-Us6"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="p7g-Zw-gqq" secondAttribute="trailing" id="rXM-OV-rbA"/>
+                <constraint firstItem="hwj-ox-ath" firstAttribute="height" secondItem="C53-MI-QaS" secondAttribute="height" id="tSZ-KB-R19"/>
+                <constraint firstItem="C53-MI-QaS" firstAttribute="centerY" secondItem="p7g-Zw-gqq" secondAttribute="centerY" id="ug0-vm-Sz3"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="p7g-Zw-gqq" secondAttribute="bottom" id="vNd-yq-Tmz"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="backgroundImage" destination="p7g-Zw-gqq" id="g0c-m8-qTZ"/>
+                <outlet property="domainLabel" destination="hwj-ox-ath" id="Hga-IW-kel"/>
+            </connections>
+            <point key="canvasLocation" x="44.5" y="340"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="downward" width="15" height="15"/>
+    </resources>
+</document>

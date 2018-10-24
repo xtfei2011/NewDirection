@@ -1,0 +1,57 @@
+//
+//  NDPurchaseLiveController.m
+//  NewDirection
+//
+//  Created by 谢腾飞 on 2018/10/18.
+//  Copyright © 2018年 谢腾飞. All rights reserved.
+//
+
+#import "NDPurchaseLiveController.h"
+#import "NDLiveViewCell.h"
+#import "NDDetailsController.h"
+
+@interface NDPurchaseLiveController ()
+
+@end
+
+@implementation NDPurchaseLiveController
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    
+    self.navigationItem.title = @"已购直播";
+    
+    [self setupTabelView];
+}
+
+- (void)setupTabelView
+{
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    self.tableView.rowHeight = 9 * NDMainScreen_Width / 31;
+    self.tableView.contentInset = UIEdgeInsetsMake(3, 0, 0, 0);
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return 10;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NDLiveViewCell *cell = [NDLiveViewCell cellWithTableView:tableView];
+    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [tableView deselectRowAtIndexPath:indexPath animated:NO];
+    
+    NDDetailsController *detailsVC = [[NDDetailsController alloc] init];
+    detailsVC.type = 0;
+   
+    [self.navigationController pushViewController:detailsVC animated:YES];
+
+}
+
+@end

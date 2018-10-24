@@ -1,0 +1,46 @@
+//
+//  LocalDataHeader.pch
+//  NewDirection
+//
+//  Created by 谢腾飞 on 2018/9/20.
+//  Copyright © 2018年 谢腾飞. All rights reserved.
+//
+
+#ifndef LocalDataHeader_pch
+#define LocalDataHeader_pch
+
+/*** 如果希望某些内容能拷贝到任何源代码文件(OC\C\C++等), 那么就不要写在#ifdef __OBJC__和#endif之间 ***/
+
+/***** 在#ifdef __OBJC__和#endif之间的内容, 只会拷贝到OC源代码文件中, 不会拷贝到其他语言的源代码文件中 *****/
+#ifdef __OBJC__
+
+/*** 首页分类 ***/
+#define SortTitleArray           @[@"线上课程" ,@"直播教室" ,@"面授培训" ,@"图书资料"]
+
+#define SortImageArray           @[@"course_icon" ,@"live_icon" ,@"question_icon" ,@"books_icon"]
+
+#define SortControllerArray      @[@"NDCourseViewController" ,@"NDLiveViewController", @"NDCultivateViewController" ,@"NDBooksViewController"]
+
+/*** 我的分类 ***/
+#define MineControllerArray      @[@"NDMyCoursesController" ,@"NDMyLiveController", @"NDMyLocaleController" ,@"NDMyCollectController" ,@"NDProclamationController" ,@"NDOpinionViewController", @"NDAboutViewController" ,@"NDSetViewController"]
+
+/*** 更多按钮点击 ***/
+#define HomeMoreControllerArray    @[@"NDLiveViewController" ,@"NDCourseViewController" ,@"NDBooksViewController"]
+
+/*** 我的面授 ***/
+#define MyLocaleChildController    @[@"NDCultivateViewController" ,@"NDCultivateViewController"]
+
+/*** 我的收藏 ***/
+#define MyCollectChildController    @[@"NDCourseViewController" ,@"NDMyLiveController" ,@"NDCultivateViewController" ,@"NDBooksViewController"]
+
+
+/************************************  接口  ******************************************/
+/*** 公共接口 ***/
+#define Comment_DataInterface                @"http://app.kuailaiyue.cn/index.php/"
+#define Common_Interface_Montage(A)          [NSString stringWithFormat:@"%@%@", Comment_DataInterface ,A]
+
+#endif
+/***** 在#ifdef __OBJC__和#endif之间的内容, 只会拷贝到OC源代码文件中, 不会拷贝到其他语言的源代码文件中 *****/
+
+#endif /* LocalDataHeader_pch */
+

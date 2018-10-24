@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NDSearchViewController">
+            <connections>
+                <outlet property="searchCollectionView" destination="QX0-J2-Ndw" id="0gG-uM-G5U"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E4o-Bt-cDT">
+                    <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                    <subviews>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xgj-gq-Wat">
+                            <rect key="frame" x="20" y="0.0" width="335" height="647"/>
+                            <subviews>
+                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="QX0-J2-Ndw">
+                                    <rect key="frame" x="0.0" y="0.0" width="335" height="648"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="bsP-uF-shP">
+                                        <size key="itemSize" width="50" height="50"/>
+                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </collectionViewFlowLayout>
+                                    <cells/>
+                                    <connections>
+                                        <outlet property="dataSource" destination="-1" id="1wb-Dg-01e"/>
+                                        <outlet property="delegate" destination="-1" id="XiK-cd-Fdl"/>
+                                    </connections>
+                                </collectionView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="QX0-J2-Ndw" firstAttribute="width" secondItem="xgj-gq-Wat" secondAttribute="width" id="80o-UO-lGR"/>
+                                <constraint firstItem="QX0-J2-Ndw" firstAttribute="top" secondItem="xgj-gq-Wat" secondAttribute="top" id="Ab9-N9-9ZP"/>
+                                <constraint firstItem="QX0-J2-Ndw" firstAttribute="height" secondItem="xgj-gq-Wat" secondAttribute="height" constant="1" id="YOC-8E-sjN"/>
+                                <constraint firstAttribute="bottom" secondItem="QX0-J2-Ndw" secondAttribute="bottom" id="Z7S-a8-oGK"/>
+                                <constraint firstAttribute="trailing" secondItem="QX0-J2-Ndw" secondAttribute="trailing" id="omM-6e-fyy"/>
+                                <constraint firstItem="QX0-J2-Ndw" firstAttribute="leading" secondItem="xgj-gq-Wat" secondAttribute="leading" id="sNM-QU-pkP"/>
+                            </constraints>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="j3H-F5-PFF"/>
+                            </connections>
+                        </scrollView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="xgj-gq-Wat" firstAttribute="leading" secondItem="E4o-Bt-cDT" secondAttribute="leading" constant="20" id="2sJ-4F-u3d"/>
+                        <constraint firstAttribute="bottom" secondItem="xgj-gq-Wat" secondAttribute="bottom" id="MKW-AW-tEJ"/>
+                        <constraint firstAttribute="trailing" secondItem="xgj-gq-Wat" secondAttribute="trailing" constant="20" id="V7S-AM-iFW"/>
+                        <constraint firstItem="xgj-gq-Wat" firstAttribute="top" secondItem="E4o-Bt-cDT" secondAttribute="top" id="h0q-jz-pHR"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="E4o-Bt-cDT" secondAttribute="bottom" id="1dw-b9-Gy0"/>
+                <constraint firstItem="E4o-Bt-cDT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="A6T-Ot-Etr"/>
+                <constraint firstItem="E4o-Bt-cDT" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="topMargin" id="nfC-Dn-GfA"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="E4o-Bt-cDT" secondAttribute="trailing" id="vdV-54-EZh"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+        </view>
+    </objects>
+</document>

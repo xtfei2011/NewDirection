@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="NDSegmentHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="170"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DWI-H1-96Z">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="170"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="正在播放：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4wJ-Um-U72">
+                            <rect key="frame" x="10" y="10" width="66.5" height="16"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" red="0.31764705879999999" green="0.33725490200000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2018年中医专长考前全真模拟卷-执业-第8讲" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fjm-77-dq2">
+                            <rect key="frame" x="10" y="31" width="355" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="G9o-57-Wb2"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                            <color key="textColor" red="0.31764705879999999" green="0.33725490200000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DZp-cj-HZx">
+                            <rect key="frame" x="10" y="61" width="140.5" height="100"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="DZp-cj-HZx" secondAttribute="height" multiplier="45:32" id="Qoh-lQ-Rq0"/>
+                                <constraint firstAttribute="height" constant="100" id="UKL-ha-aXB"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2018年中医专长考前全真模拟卷-执业" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hiN-Op-UBg">
+                            <rect key="frame" x="160.5" y="61" width="204.5" height="33.5"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                            <color key="textColor" red="0.31764705879999999" green="0.33725490200000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="主讲人：欧阳修" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EcN-0w-IvV">
+                            <rect key="frame" x="160.5" y="104.5" width="204.5" height="16"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" red="0.61568627450000002" green="0.62745098040000002" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="课时数：8课时" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ku3-iu-JQ1">
+                            <rect key="frame" x="160.5" y="145" width="88" height="16"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" red="0.61568627450000002" green="0.62745098040000002" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="hiN-Op-UBg" firstAttribute="leading" secondItem="DZp-cj-HZx" secondAttribute="trailing" constant="10" id="3T1-uj-w4M"/>
+                        <constraint firstItem="ku3-iu-JQ1" firstAttribute="leading" secondItem="hiN-Op-UBg" secondAttribute="leading" id="4Wd-dN-ZaQ"/>
+                        <constraint firstItem="Fjm-77-dq2" firstAttribute="leading" secondItem="4wJ-Um-U72" secondAttribute="leading" id="4kg-I3-S02"/>
+                        <constraint firstAttribute="trailing" secondItem="hiN-Op-UBg" secondAttribute="trailing" constant="10" id="B14-kf-YPK"/>
+                        <constraint firstItem="DZp-cj-HZx" firstAttribute="top" secondItem="Fjm-77-dq2" secondAttribute="bottom" constant="10" id="Byx-aT-rRH"/>
+                        <constraint firstItem="EcN-0w-IvV" firstAttribute="top" secondItem="hiN-Op-UBg" secondAttribute="bottom" constant="10" id="Cd9-Ur-3FF"/>
+                        <constraint firstItem="Fjm-77-dq2" firstAttribute="top" secondItem="4wJ-Um-U72" secondAttribute="bottom" constant="5" id="JI4-EO-dME"/>
+                        <constraint firstItem="4wJ-Um-U72" firstAttribute="top" secondItem="DWI-H1-96Z" secondAttribute="top" constant="10" id="O7F-s9-sSW"/>
+                        <constraint firstAttribute="trailing" secondItem="Fjm-77-dq2" secondAttribute="trailing" constant="10" id="Pdk-Rj-Z6O"/>
+                        <constraint firstItem="hiN-Op-UBg" firstAttribute="top" secondItem="DZp-cj-HZx" secondAttribute="top" id="Q7Q-e3-C6I"/>
+                        <constraint firstItem="EcN-0w-IvV" firstAttribute="leading" secondItem="hiN-Op-UBg" secondAttribute="leading" id="V4d-An-w7U"/>
+                        <constraint firstItem="DZp-cj-HZx" firstAttribute="leading" secondItem="DWI-H1-96Z" secondAttribute="leading" constant="10" id="WMh-G5-bJL"/>
+                        <constraint firstItem="ku3-iu-JQ1" firstAttribute="bottom" secondItem="DZp-cj-HZx" secondAttribute="bottom" id="iFz-ne-NHw"/>
+                        <constraint firstItem="EcN-0w-IvV" firstAttribute="trailing" secondItem="hiN-Op-UBg" secondAttribute="trailing" id="v2j-cT-QR9"/>
+                        <constraint firstItem="4wJ-Um-U72" firstAttribute="leading" secondItem="DWI-H1-96Z" secondAttribute="leading" constant="10" id="xAD-G1-ApQ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="DWI-H1-96Z" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="7gl-LA-2eF"/>
+                <constraint firstItem="DWI-H1-96Z" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="8Ec-JC-Hvz"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="DWI-H1-96Z" secondAttribute="trailing" id="FLt-Ka-nVp"/>
+                <constraint firstItem="DWI-H1-96Z" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="qiF-lq-Lp8"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="coverView" destination="DZp-cj-HZx" id="Pla-lU-6g2"/>
+                <outlet property="periodLabel" destination="ku3-iu-JQ1" id="frv-j1-Dqg"/>
+                <outlet property="problemLabel" destination="Fjm-77-dq2" id="neY-OW-grA"/>
+                <outlet property="titleLabel" destination="hiN-Op-UBg" id="30Q-mV-j2D"/>
+                <outlet property="writerLabel" destination="EcN-0w-IvV" id="XiX-vG-pap"/>
+            </connections>
+            <point key="canvasLocation" x="-84.5" y="290.5"/>
+        </view>
+    </objects>
+</document>

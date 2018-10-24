@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="NDLiveHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="duV-4V-LiU">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BGO-Dm-qYa">
+                            <rect key="frame" x="10" y="41" width="355" height="3"/>
+                            <color key="backgroundColor" red="0.8862745098" green="0.8862745098" blue="0.87843137250000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="3" id="MCV-zE-oCm"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <real key="value" value="1.5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="马上开播" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c1i-LN-wUc">
+                            <rect key="frame" x="10" y="0.0" width="57.5" height="41"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="c1i-LN-wUc" firstAttribute="leading" secondItem="duV-4V-LiU" secondAttribute="leading" constant="10" id="0UQ-Tf-iuq"/>
+                        <constraint firstAttribute="trailing" secondItem="BGO-Dm-qYa" secondAttribute="trailing" constant="10" id="8Tz-k7-VOe"/>
+                        <constraint firstItem="BGO-Dm-qYa" firstAttribute="leading" secondItem="duV-4V-LiU" secondAttribute="leading" constant="10" id="Chb-7K-iGJ"/>
+                        <constraint firstItem="BGO-Dm-qYa" firstAttribute="top" secondItem="c1i-LN-wUc" secondAttribute="bottom" id="Jlg-Zl-ZE6"/>
+                        <constraint firstItem="c1i-LN-wUc" firstAttribute="top" secondItem="duV-4V-LiU" secondAttribute="top" id="gNm-T9-05b"/>
+                        <constraint firstAttribute="bottom" secondItem="BGO-Dm-qYa" secondAttribute="bottom" id="nGS-eg-LTK"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="duV-4V-LiU" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="BnY-vG-bFA"/>
+                <constraint firstItem="duV-4V-LiU" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="gpC-hV-lvx"/>
+                <constraint firstItem="duV-4V-LiU" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="roq-Gb-lGb"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="duV-4V-LiU" secondAttribute="trailing" id="vKp-UR-Lpc"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="titleLabel" destination="c1i-LN-wUc" id="rzK-45-IUY"/>
+            </connections>
+            <point key="canvasLocation" x="44.5" y="101"/>
+        </view>
+    </objects>
+</document>
